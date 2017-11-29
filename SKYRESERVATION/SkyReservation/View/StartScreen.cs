@@ -15,7 +15,7 @@ namespace SkyReservation.View
             Reservation
         }
 
-        public void displayScreen()
+        public void DisplayScreen()
         {
             Console.WriteLine("WELCOME TO SKY RESERVATIONS");
             Console.WriteLine("Please enter the corresponding number of your choice:");

@@ -17,7 +17,7 @@ namespace SkyReservation.View
             OriginDestination
         }
 
-        public void displayScreen()
+        public void DisplayScreen()
         {
             Console.WriteLine("SKY RESERVATIONS - FLIGHT MAINTENANCE - SEARCH FLIGHTS");
             Console.WriteLine("Please enter the corresponding number of your choice:");

@@ -12,7 +12,7 @@ namespace SkyReservation.Driver
         public static void Main()
         {
             StartScreen startScreen = new StartScreen();
-            startScreen.displayScreen();
+            startScreen.DisplayScreen();
         }
     }
 }

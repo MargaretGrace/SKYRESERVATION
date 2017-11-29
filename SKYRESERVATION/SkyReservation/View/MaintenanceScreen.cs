@@ -16,7 +16,7 @@ namespace SkyReservation.View
             Search
         }
 
-        public void displayScreen()
+        public void DisplayScreen()
         {
             Console.WriteLine("SKY RESERVATIONS - FLIGHT MAINTENANCE");
             Console.WriteLine("Please enter the corresponding number of your choice:");
