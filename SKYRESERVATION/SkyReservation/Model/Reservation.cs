@@ -8,11 +8,11 @@ namespace SkyReservation.Model
 {
     class Reservation
     {
-        //public int ReservationId { get; set; }
+        public int ReservationID { get; set; }
         public string AirlineCode { get; set; }
-        public string FlightNumber { get; set; }
+        public int FlightNumber { get; set; }
         public string FlightDate { get; set; }
         public int NumPassengers { get; set; }
-        public int PnrNumber { get; set; }
+        public string PnrNumber { get; set; }
     }
 }

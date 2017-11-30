@@ -11,8 +11,9 @@ namespace SkyReservation.Driver
     {
         public static void Main()
         {
-            StartScreen startScreen = new StartScreen();
-            startScreen.DisplayScreen();
+            Controller controller = new Controller();
+            Console.WriteLine("Closing window...");
+            Console.ReadLine();
         }
     }
 }

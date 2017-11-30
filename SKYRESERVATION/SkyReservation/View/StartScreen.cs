@@ -21,11 +21,11 @@ namespace SkyReservation.View
             Console.WriteLine("Please enter the corresponding number of your choice:");
             Console.WriteLine("1 - Flight Maintenance");
             Console.WriteLine("2 - Reservation");
-            GetInput();
         }
 
         public String GetInput()
         {
+            DisplayScreen();
             String input;
             do
             {
@@ -51,17 +51,6 @@ namespace SkyReservation.View
             {
                 Console.WriteLine("Not a valid option, try again");
                 return false;
-            }
-        }
-
-        public void GetNextScreen(int input)
-        {
-            switch (input)
-            {
-                case (int)Options.Maintenance: //new MaintenanceScreen();
-                    break;
-                case (int)Options.Reservation: //new ReservationScreen();
-                    break;
             }
         }
            

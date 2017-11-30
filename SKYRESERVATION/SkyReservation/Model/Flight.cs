@@ -8,12 +8,14 @@ namespace SkyReservation.Model
 {
     class Flight
     {
-        //public int FlightId { get; set; }
+        public int FlightID { get; set; }
         public string AirlineCode { get; set; }
         public int FlightNumber { get; set; }
-        public int ArrivalStation { get; set; }
-        public int DepartureStation { get; set; }
-        public string Sta { get; set; }
-        public string Std { get; set; }
+        public string DepartureStation { get; set; }
+        public string ArrivalStation { get; set; }
+        public string ScheduledTimeDeparture { get; set; }
+        public string ScheduledTimeArrival { get; set; }
+        //public TimeSpan Sta { get; set; }
+        //public TimeSpan Std { get; set; }
     }
 }

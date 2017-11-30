@@ -13,7 +13,10 @@ namespace SkyReservation.View
         {
             Start,
             Add,
-            Search
+            SearchAirlineCode,
+            SearchFlightNumber,
+            SearchOrigin,
+            SearchDestination
         }
 
         public void DisplayScreen()
@@ -22,13 +25,16 @@ namespace SkyReservation.View
             Console.WriteLine("Please enter the corresponding number of your choice:");
             Console.WriteLine("0 - Return to Start Screen");
             Console.WriteLine("1 - Add Flights");
-            Console.WriteLine("2 - Search Flights");
-            GetInput();
+            Console.WriteLine("2 - Search Flights by Airline Code");
+            Console.WriteLine("3 - Search Flights by Flight Number");
+            Console.WriteLine("4 - Search Flights by Origin");
+            Console.WriteLine("5 - Search Flights by Destination");
         }
 
         public String GetInput()
         {
             String input;
+            DisplayScreen();
             do{
                 Console.Write("Enter the number of your choice: ");
                 input = Console.ReadLine();
@@ -52,19 +58,6 @@ namespace SkyReservation.View
             {
                 Console.WriteLine("Not a valid option, try again");
                 return false;
-            }
-        }
-
-        public void GetNextScreen(int input)
-        {
-            switch (input)
-            {
-                case (int)Options.Start: //new StartScreen();
-                    break;
-                case (int)Options.Add: //new MaintenanceScreen();
-                    break;
-                case (int)Options.Search: //new ReservationScreen();
-                    break;
             }
         }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SkyReservation.View
 {
-    class SearchFlightByAirlineCode
+    class PassengerDetails
     {
     }
 }

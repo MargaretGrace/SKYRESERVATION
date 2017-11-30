@@ -32,7 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,26 +48,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\ReservationContext.cs" />
     <Compile Include="Driver\Controller.cs" />
     <Compile Include="Driver\Driver.cs" />
     <Compile Include="Abstract\SelectionScreen.cs" />
+    <Compile Include="Driver\MaintenanceController.cs" />
+    <Compile Include="Driver\ReservationController.cs" />
     <Compile Include="Model\Flight.cs" />
     <Compile Include="Model\Passenger.cs" />
     <Compile Include="Model\Reservation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\AddFlight.cs" />
+    <Compile Include="View\FlightDetails.cs" />
     <Compile Include="View\MaintenanceScreen.cs" />
+    <Compile Include="View\PassengerDetails.cs" />
+    <Compile Include="View\ReservationDetails.cs" />
     <Compile Include="View\ReservationScreen.cs" />
-    <Compile Include="View\SearchFlightByAirlineCode.cs" />
-    <Compile Include="View\SearchFlightByFlightNumber.cs" />
-    <Compile Include="View\SearchFlightByOriginDestination.cs" />
-    <Compile Include="View\SearchFlightScreen.cs" />
     <Compile Include="View\StartScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
